@@ -4,6 +4,8 @@ body{
   background-color: red; /*development only*/
   border: 1px dotted blue; /*design aid only*/
   margin: 0;
+  display: flex;
+  justify-content: center;
 }
 /* Header style*/
 .logo{
@@ -44,10 +46,39 @@ nav a{
 }
 
 /* Main section styling*/
-.image-mother p{
+main{
+  display: flex;
   margin-top: 120px;
-  width: 600px;
-  font: Georgia, Arial, sans-serif;
+  border: 1px dotted blue; /*development only*/
+}
+p{
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+.column, .story{
+  border: 1px dotted blue;
+}   /*development only*/
+.column{
+  display: flex;
+  margin-right: 32px;
+}
+.large{
+  width: 630px;
+}
+.medium{
+  width: 300px;
+}
+.small{
+  width: 240px;
+}
+.caption{
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
   color: white;
+}
+#story-main{
+  background-image: url(../images/img-story-main.png);
   font-size: 40px;
 }
