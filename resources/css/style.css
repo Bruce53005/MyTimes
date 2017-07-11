@@ -1,11 +1,11 @@
 /*My Times style css*/
 body{
   font-family: Verdana, Arial, sans-serif;
-  background-color: white; /*development only*/
-  border: 1px dotted blue; /*design aid only*/
+  background-color: white;
   margin: 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 /* Header style*/
 .logo{
@@ -49,12 +49,22 @@ nav a{
 main{
   display: flex;
   margin-top: 120px;
-  border: 1px dotted blue; /*development only*/
+  border: 1px solid black;
 }
 p{
   font-family: Georgia;
   font-size: 17px;
   color: black;
+}
+h2{
+  font-family: Georgia;
+}
+h3{
+    font-family: Georgia;
+    margin-bottom: 41px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
 }
 .column{
   display: flex;
@@ -63,7 +73,6 @@ p{
   flex-shrink: 0;
   margin-right:15px;
   margin-left: 15px;
-  border: 1px dotted blue; /*development only*/
 }
 .column.large{
   width: 630px;
@@ -77,6 +86,20 @@ p{
 }
 .column.small{
   width: 240px;
+}
+.small{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.small p{
+  margin: 0;
+  border-bottom: 1px solid black;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  padding: 10px;
 }
 .image-content{
   display: flex;
@@ -111,4 +134,29 @@ p{
     width: 46%;
     display: flex;
     flex-direction: column;
+}
+
+/*Footer style*/
+footer{
+    background-color: MediumAquamarine;
+    font-family: Verdana;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    margin-top: 70px;
+    flex-grow: 1;
+}
+.logo_2{
+    font-family: Georgia;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    border-right: 2px solid white;
+    padding-right: 20px;
+}
+footer p{
+    color: yellow;
 }
