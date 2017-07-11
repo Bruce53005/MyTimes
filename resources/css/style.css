@@ -1,7 +1,7 @@
 /*My Times style css*/
 body{
   font-family: Verdana, Arial, sans-serif;
-  background-color: red; /*development only*/
+  background-color: white; /*development only*/
   border: 1px dotted blue; /*design aid only*/
   margin: 0;
   display: flex;
@@ -56,29 +56,42 @@ p{
   font-size: 17px;
   color: black;
 }
-.column, .story{
-  border: 1px dotted blue;
-}   /*development only*/
 .column{
   display: flex;
+  flex-direction: column;
   margin-right: 32px;
+  border: 1px dotted blue; /*development only*/
 }
-.large{
+.column.large{
   width: 630px;
 }
-.medium{
+.column.medium{
   width: 300px;
 }
-.small{
+.column.small{
   width: 240px;
 }
-.caption{
+.image-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
   color: white;
+  border: 1px dotted blue; /*development only*/
 }
-#story-main{
-  background-image: url(../images/img-story-main.png);
+.lead-story .image-content{
+  background-image: url('../images/img-story-main.png');
   font-size: 40px;
+}
+.orca-story .image-content{
+  background-image: url('../images/img-story-2-fallSeason.png');
+}
+.burger-story .image-content{
+  background-image: url('../images/img-hipster cameraman.png');
+}
+.cats-story .image-content{
+  background-image: url('../images/img-story-1-cat.png');
 }
